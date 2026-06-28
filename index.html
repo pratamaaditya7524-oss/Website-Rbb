@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome di RBB</title>
+    <style>
+        /* Background gradasi biru dan pink manis */
+        body {
+            margin: 0;
+            padding: 20px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 50%, #fbc2eb 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.88);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #4a00e0;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+
+        /* Bingkai foto disesuaikan untuk foto portrait/vertikal */
+        .photo-container {
+            width: 100%;
+            max-height: 500px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            background-color: #f0f0f0;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        /* Navigasi Tombol */
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 12px 35px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 110px;
+        }
+
+        .btn-yes {
+            background: linear-gradient(45deg, #2196F3, #00BCD4);
+            color: white;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+        }
+
+        .btn-yes:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.5);
+        }
+
+        .btn-no {
